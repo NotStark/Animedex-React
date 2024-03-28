@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary: 142 98% 51%;
+    --color-secondary: 98, 78%, 34%;
+    --color-text: 0 0% 93%;
+    --color-background: 240 20% 2%;
+    --color-skeleton: 0 0% 13%;
+  }
+
+  :root[data-theme="light"] {
+    --color-text: 240 20% 2%;
+    --color-background: 0 0% 93%;
+    --color-skeleton: 0 0% 72%;
+  }
+}
+
+
+::-webkit-scrollbar
+{
+	width: 5px;
+	background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb
+{
+  border-radius: 10px;
+	background-color: hsl(142, 98%, 51%);	
+}
+
+
+
+.autoplay-progress {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  z-index: 10;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: hsl(142, 98%, 51%);
+  text-shadow: 0px 0px 10px hsl(142, 98%, 51%);
+}
+
+.autoplay-progress svg {
+  --progress: 0;
+  position: absolute;
+  left: 0;
+  top: 0px;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  stroke-width: 4px;
+  stroke: hsl(142, 98%, 51%);
+  fill: none;
+  stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
+  stroke-dasharray: 125.6;
+  transform: rotate(-90deg);
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  background-color: hsl(142, 98%, 51%);
+}
+
+
+.lazy-load-image-background {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+
+}
+.lazy-load-image-background   img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: inherit;
+}
+
+
+
+:root {
+  --plyr-color-main: hsl(142, 98%, 51%)
+}
