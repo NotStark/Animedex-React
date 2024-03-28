@@ -28,5 +28,5 @@ Contributions are always welcome! If you want to contribute to this project, ple
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](https://github.com/your-username/anime-watcher/blob/main/LICENSE) file for details.
+This project is licensed under the MIT License. See the [LICENSE](./LICENCE) file for details.
 
