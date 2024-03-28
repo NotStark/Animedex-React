@@ -17,6 +17,9 @@ If you want to run this project in your local machine, follow these steps:
 4. Start the server `npm run dev`
 5. Open your browser and go to `http://localhost:5173`
 
+## Acknowledgement
+this repo utilizes [AnimedexApi](https://github.com/TechShreyash/AnimeDexApi)  to show anime data in its site.
+
 ## Contributing
 Contributions are always welcome! If you want to contribute to this project, please follow these steps:
 
@@ -27,6 +30,5 @@ Contributions are always welcome! If you want to contribute to this project, ple
 5. Create a new pull request
 
 ## License
-
 This project is licensed under the MIT License. See the [LICENSE](./LICENCE) file for details.
 
