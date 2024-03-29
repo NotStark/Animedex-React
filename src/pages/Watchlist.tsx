@@ -9,7 +9,7 @@ export default function Watchlist(){
 
         <div className="my-6">
             <div className="flex items-center justify-center">
-            <h3 className="border-b-2 border-b-primary text-xl font-semibold">Wathclist</h3>
+            <h3 className="border-b-2 border-b-primary text-xl font-semibold">Watchlist</h3>
             </div>
              <Grid animes={watchList}/>
         </div>
