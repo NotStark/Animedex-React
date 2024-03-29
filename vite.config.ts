@@ -12,6 +12,8 @@ export default defineConfig({
     strictPort: true,
     // Open the browser when Vite server starts
     open: true,
+    cors: true
   },
+  
 })
 

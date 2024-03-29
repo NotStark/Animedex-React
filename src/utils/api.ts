@@ -17,11 +17,7 @@ export default async function fetchDataFromApi(endpoint: string, errorCount = 0)
 
         const res = await axios.get(baseURL + endpoint, {
            
-            headers: {
-                'Content-Type': 'application/json', 
-                'Access-Control-Allow-Origin': '*', 
-                'Access-Control-Allow-Methods': 'GET', 
-            }
+          
         });
 
         return res.data
