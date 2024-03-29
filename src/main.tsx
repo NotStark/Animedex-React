@@ -36,7 +36,7 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "/anime/:animeId",
+        path: "anime/:animeId",
         element: <AnimeDetails />,
       },
       {
@@ -44,7 +44,7 @@ const router = createBrowserRouter([
         element: <Watch />,
       },
       {
-        path: "/search/:query",
+        path: "search/:query",
         element: <SearchResult />,
       },
       {
