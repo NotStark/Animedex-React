@@ -1,4 +1,4 @@
-# AnimeDex (currently underDevelopment)
+# AnimeDex (currently in Development)
 Welcome to AnimeDex Project, a small project created for learning purpose. This project is an open-source and free to use. If you have any kind of issue or suggestion, feel free to create an issue or pull request 😁.
 
 ## Features
