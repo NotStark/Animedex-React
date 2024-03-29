@@ -1,8 +1,13 @@
 import Card from "./Card";
 import CardSkeleton from "./skeletons/CardSkeleton";
 import React from "react";
-import type { PopularType, RecentType, SearchType , WatchlistType } from "../types";
-import {  Link } from "react-router-dom";
+import type {
+  PopularType,
+  RecentType,
+  SearchType,
+  WatchlistType,
+} from "../types";
+import { Link } from "react-router-dom";
 
 type GridType = {
   animes:
@@ -17,15 +22,13 @@ type GridType = {
 
 function GridWrap({ children }: { children: React.ReactNode }) {
   return (
-    <div className="relative grid p-4  grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6  sm:py-5 sm:px-12 gap-x-4 gap-y-12">
+    <div className="relative grid p-4  grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6  sm:py-5 sm:px-12 gap-x-4 gap-y-12 ">
       {children}
     </div>
   );
 }
 
 export default function Grid({ animes, loading, error }: GridType) {
-
-
   if (loading || !animes || error) {
     return (
       <GridWrap>
@@ -50,12 +53,9 @@ export default function Grid({ animes, loading, error }: GridType) {
     <GridWrap>
       {animes?.map((anime) => {
         return (
-        <Link to={`/anime/${anime.id.split("-episode-")[0]}`}>
-          <Card
-            key={anime.id}     
-            anime={anime}
-          />
-        </Link>
+          <Link to={`/anime/${anime.id.split("-episode-")[0]}`}>
+            <Card key={anime.id} anime={anime} />
+          </Link>
         );
       })}
     </GridWrap>
