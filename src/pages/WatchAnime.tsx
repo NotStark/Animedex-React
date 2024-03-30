@@ -43,7 +43,7 @@ export default function WatchAnime() {
   });
 
   useEffect(() => {
-    if (!episodeData || !animeData) return;
+    if (!episodeData) return;
 
     const source = episodeData?.results?.stream?.sources[0]?.file;
 
@@ -113,7 +113,7 @@ export default function WatchAnime() {
         window.hls.destroy();
       }
     };
-  }, [episodeId , episodeData , animeData]);
+  }, [episodeId , episodeData]);
 
   if (episodeLoading || animeLoading) {
     return <div>Loading...</div>;
@@ -136,7 +136,7 @@ export default function WatchAnime() {
             />
           </div>
           <div className="p-2 grid grid-cols-4 gap-3  mt-2 max-h-64 overflow-y-scroll ">
-            {animeData?.results?.episodes?.map((episodeInfo: any) => (
+            {animeData?.results?.episodes?.map((episodeInfo) => (
               <Link
                 to={`/watch/${animeId}/${episodeInfo[1]}`}
                 className={`text-center py-1 rounded-sm  ${
@@ -170,7 +170,7 @@ export default function WatchAnime() {
           </p>
           <div className="flex items-center flex-wrap gap-3 mt-2">
             {[animeData?.results.type.split(" ")[0], animeData?.results.released, animeData?.results.status].map(
-              (val: string | undefined, index: number) => (
+              (val, index) => (
                 <span className="bg-primary text-sm  font-medium px-2 rounded-md" key={index}>
                   {val}
                 </span>
