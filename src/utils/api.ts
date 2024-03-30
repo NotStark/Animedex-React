@@ -14,8 +14,7 @@ export default async function fetchDataFromApi(endpoint: string, errorCount = 0)
     const baseURL = server;
 
     try {
-        const res = await axios.get(baseURL + endpoint, {
-        });
+        const res = await axios.get(baseURL + endpoint);
         return res.data
 
     } catch (error) {
