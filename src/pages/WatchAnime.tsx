@@ -45,6 +45,8 @@ export default function WatchAnime() {
 
     const source = episodeData?.results?.stream?.sources[0]?.file;
 
+    
+
     if (!source) return;
 
     const video = document.getElementById("player") as HTMLVideoElement;
@@ -144,11 +146,11 @@ export default function WatchAnime() {
             ))}
           </div>
         </div>
-        <div>
-          <video id="player"></video>
+        <div className="w-full h-full">
+          <video id="player" className="aspect-video w-full h-full"></video>
           <div></div>
         </div>
-        <div className="flex items-center justify-center flex-col">
+        <div className="flex items-center justify-center flex-col text-center">
           <div className=" h-[260px]  rounded-sm ">
             <Image src={animeData?.results.image!} className="rounded-sm" />
           </div>
