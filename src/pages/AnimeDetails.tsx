@@ -89,8 +89,8 @@ export default function AnimeDetails() {
                   "HD",
                   "EP " + data?.results.episodes.length,
                   data?.results.type,
-                ].map((item) => (
-                  <span className="bg-primary text-sm px-1 rounded-sm opacity-90 text-nowrap">
+                ].map((item, index) => (
+                  <span className="bg-primary text-sm px-1 rounded-sm opacity-90 text-nowrap" key={index}>
                     {item}
                   </span>
                 ))}
@@ -99,8 +99,8 @@ export default function AnimeDetails() {
                 {data?.results.genre
                   .split(",")
                   .slice(0, 3)
-                  .map((genre) => (
-                    <span className="border-2 px-4 py-1 rounded-full text-[.7rem] cursor-pointer">
+                  .map((genre, index) => (
+                    <span className="border-2 px-4 py-1 rounded-full text-[.7rem] cursor-pointer" key={index}>
                       {genre}
                     </span>
                   ))}
