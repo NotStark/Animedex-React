@@ -7,7 +7,7 @@ import {
 
 export default function Footer() {
   return (
-    <div className="border-t-2 border-t-textColor/20 h-[40vh]  flex items-center justify-center flex-col gap-6">
+    <footer className="border-t-2 border-t-textColor/20 h-[40vh]  flex items-center justify-center flex-col gap-6">
       <h3 className="text-3xl sm:text-4xl font-bold uppercase tracking-wide">
         Animedex<span className="text-primary ">.</span>
       </h3>
@@ -29,6 +29,6 @@ export default function Footer() {
         &copy; 2024 Stark. All rights reserved
         <span className="text-primary">.</span>
       </p>
-    </div>
+    </footer>
   );
 }
