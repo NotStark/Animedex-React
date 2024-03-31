@@ -149,7 +149,7 @@ export default function WatchAnime() {
           </div>
         </div>
 
-        <div className="w-4/5 h-full">
+        <div className="w-full lg:w-4/5 h-full">
           <video id="player" className="aspect-video w-full h-full" />
           <div></div>
         </div>
