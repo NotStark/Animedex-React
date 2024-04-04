@@ -5,6 +5,7 @@ import { useState, useEffect, useRef, forwardRef, useCallback, FormEvent } from 
 import { Link, useNavigate } from "react-router-dom";
 import { MdLightMode, MdOutlineMenuOpen, MdDarkMode } from "react-icons/md";
 
+// No Need of isMobile state can be done through css only - reminder to myself
 
 export default function Navbar() {
   const navigate = useNavigate();
