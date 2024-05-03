@@ -57,6 +57,7 @@ export default function WatchAnime() {
       controls: [
         "play-large",
         "play",
+        "volume",
         "progress",
         "duration",
         "settings",
